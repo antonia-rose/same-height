@@ -1,0 +1,22 @@
+{
+  "name": "sameHeight",
+  "version": "0.0.1",
+  "authors": [
+    "Niklas Köhler <nkoehler@brainbits.net>",
+    "Antonia Ilski <ailski@brainbits.net>"
+  ],
+  "description": "calculates highest element of list and set all elements to that height",
+  "main": "src/same-height.js",
+  "moduleType": [
+    "node"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
