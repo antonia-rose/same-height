@@ -15,6 +15,6 @@ $('.target').trigger('EVENT');
 After the plugin has been bound to the element it delivers some events:
 
 | Event | Description |
-| ------------- |:-------------:|
-| updateSize| recalculates the height of each children (like initial call) |
-| destroySize | remove the height of each children |
+|-------------|-------------|
+|updateSize |recalculates the height of each children (like initial call)|
+|destroySize |remove the height of each children|
