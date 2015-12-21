@@ -5,7 +5,7 @@ This short jQuery plugin sets all elements in a list to the biggest calculated h
 ```javascript
 $('.target').sameHeight('.children');
 ```
-This sets all .teaser to same height in container.
+This sets all `.children` to same height in `.container`.
 
 ## Events
 ```javascript
