@@ -1,0 +1,58 @@
+<!doctype html>
+<html class="no-js" lang="de">
+
+<head>
+
+<meta charset="utf-8">
+
+<title></title>
+
+<style type="text/css">
+    ul {
+        margin: 0;
+        overflow: hidden;
+        padding: 0;
+    }
+    li {
+        border: 1px solid #000;
+        float: left;
+        margin: 2px;
+        padding: 12px;
+        list-style: none;
+    }
+</style>
+
+</head>
+<body>
+
+    <ul class="container">
+        <li>Lorem<br />ipsum</li>
+        <li>Lorem<br />ipsum<br />dolor</li>
+        <li>Lorem</li>
+        <li>Lorem<br />ipsum<br />dolor<br />dolor</li>
+    </ul>
+
+    <p>
+        <button class="button" data-method="update">Trigger updateSize</button>
+        <button class="button" data-method="destroy">Trigger destroySize</button>
+    </p>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="src/jquery.same-height.js"></script>
+    <script>
+        $(function() {
+            $('.container').sameHeight();
+
+            $('.button').on('click', function(e) {
+                switch($(this).data('method')) {
+                    case 'update':
+                        $('.container').trigger('updateSize'); break;
+                    case 'destroy':
+                        $('.container').trigger('destroySize'); break;
+                }
+            });
+        })
+    </script>
+
+</body>
+</html>
